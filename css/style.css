@@ -67,7 +67,7 @@ h2 {
 -----------------*/
 
 header {
-    background-color: #3161e0;
+    background-color: #255EE8;
 }
 
 .header-top {
@@ -97,6 +97,13 @@ header {
     padding: 0 10px;
 }
 
+.header-hero {
+    background-image: url(../img/jumbo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 150px 0;
+}
 /*----------------
     MAIN
 -----------------*/

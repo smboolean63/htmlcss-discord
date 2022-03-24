@@ -27,9 +27,39 @@
 
 /*----------------
     TYPO
+    regole riguardanti dimensione del font, line height, tipo del font, colore del font, spaziatura
 -----------------*/
 body {
     font-family: 'Roboto', sans-serif;
+}
+h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+/*----------------
+    BUTTONS
+-----------------*/
+.btn {
+    border-radius: 20px;
+    padding: 10px;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    cursor: pointer;
+}
+
+.btn.btn-black {
+    background-color: #000;
+    color: #fff;
+}
+.btn.btn-violette {
+    background-color: #8ea1e1;
+    color: #fff;
+}
+
+.btn.btn-large {
+    padding: 12px 20px;
 }
 
 /*----------------
@@ -41,14 +71,12 @@ header {
 }
 
 .header-top {
-    height: 70px;
-    line-height: 70px;
+    padding: 10px 0;
+    font-size: 0;
 }
 
 .logo, .main-nav, .login {
-    float: left;
-}
-.logo img {
+    display: inline-block;
     vertical-align: middle;
 }
 
@@ -62,8 +90,51 @@ header {
 .main-nav {
     width: 70%;
     text-align: center;
+    font-size: 16px;
 }
 .main-nav ul li {
     display: inline-block;
     padding: 0 10px;
+}
+
+/*----------------
+    MAIN
+-----------------*/
+section {
+    padding: 75px 0;
+}
+section h3 {
+    background-image: url(../img/stars.svg);
+    font-size: 24px;
+    display: inline-block;
+    padding: 16px 40px;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100%;
+}
+.section-bg-gray {
+    background-color: #f6f6f6;
+}
+.section-bg-gray h2 {
+    color: pink;
+}
+
+.section-text-center {
+    text-align: center;
+}
+
+.col-text, .col-img {
+    float: left;
+}
+
+.col-img {
+    width: 70%;
+}
+.col-text {
+    width: 30%;
+    padding: 40px 0;
+}
+
+.col-img-right {
+    text-align: right;
 }
